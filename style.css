@@ -108,6 +108,9 @@ header{
     color: #fafafa;
     text-decoration: none;
 }
+.one {
+    border-bottom: 3px solid #f1cdb3;
+}
 .header_link:hover, .header_link:focus, .header_link:active {
     opacity: .75;
 }
@@ -117,7 +120,7 @@ header{
 
 .intro {
     height: 100vh;
-    background: url(/shelter/assets/images/gradient.jpg) no-repeat center;
+    background: url(./assets/gradient.jpg) no-repeat center;
     background-size: cover;
     padding-top: 260px;
 }
@@ -163,6 +166,11 @@ header{
     background-color: #f1cdb3;
 }
 /* intro styles off */
+
+.page_two {
+    width: 1280px;
+    height: 588px;
+}
 
 .cozy_wrapper {
     display: flex;
@@ -210,7 +218,8 @@ header{
 /* third page start */
 
 .page_three {
-    max-width: 1200px;
+    width: 1280px;
+    height: 877px;
     background: #f6f6f6;
 }
 
@@ -308,3 +317,26 @@ header{
 }
 
 /* third page finish */
+
+/* four page start */
+
+.page_four {
+    width: 1280px;
+    height: 611px;
+}
+
+.help_container {
+    width: 1200px;
+    height: 431px;
+}
+
+.headingfour {
+    width: 308px;
+    height: 90px;
+}
+
+.four_pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
