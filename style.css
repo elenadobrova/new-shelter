@@ -1,0 +1,506 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url("fonts/arial-black.ttf"),
+    url("fonts/arial-narrow.ttf"),
+    url("fonts/arial-regular.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url("fonts/arial-bold-italic.ttf"),
+    url("fonts/arial-bold.ttf"),
+    url("fonts/arial-narrow-bold-italic.ttf"),
+    url("fonts/arial-narrow-bold.ttf");
+    font-display: swap;
+    font-weight: bold;
+}
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url("fonts/arial-narrow-italic.ttf"),
+    url("fonts/arial-italic.ttf");
+    font-display: swap;
+    font-style: italic;
+}
+@font-face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    src: url("fonts/georgia-regular.ttf");
+    font-display: swap;
+    font-weight: normal;
+}
+@font-face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    src: url("fonts/georgia-bold-italic.ttf"),
+    url("fonts/georgia-bold.ttf");
+    font-display: swap;
+    font-weight: bold;
+}
+@font-face {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    src: url("fonts/georgia-italic.ttf");
+    font-display: swap;
+    font-style: italic;
+}
+
+html {
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #545454;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* 1 header styles on */
+
+.wrapper {
+    width: 1280px;
+    height: 877px;
+    margin: 0 auto;
+}
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.header_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.header_item {
+    margin-right: 50px;
+}
+
+.header_link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fafafa;
+    text-decoration: none;
+}
+
+.header__logo-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header__logo-up {
+    font-size: 32px;
+    color: #f1cdb3;
+    line-height: 1.1;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.header__logo-down {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.15;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-left: 4px;
+}
+.one {
+    border-bottom: 3px solid #f1cdb3;
+}
+.header_link:hover, .header_link:focus, .header_link:active {
+    opacity: .75;
+}
+/* header styles off */
+
+/* intro styles on */
+
+.intro {
+    height: 100vh;
+    background: url(./assets/gradient.jpg) no-repeat center;
+    background-size: cover;
+    padding-top: 260px;
+}
+
+.intro_title {
+    max-width: 314px;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px; 
+    color: #ffffff;
+    margin-bottom: 42px;
+}
+
+.intro_subtitle {
+    max-width: 460px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px; 
+    color: #cdcdcd;
+    margin-bottom: 22px;
+}
+
+.introfirst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro_subtitle_img {
+    position: relative;
+    top: -180px;;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.make_friend {
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    background-color: #f1cdb3;
+}
+/* intro styles off */
+
+.page_two {
+    width: 1280px;
+    height: 588px;
+}
+
+.cozy_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.cozy_wrap-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+}
+.about_shelter {
+    align-self: center;
+    padding: 60px;
+}
+.header_about-shelter {
+    max-width: 370px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px; 
+    letter-spacing: 0.06em;
+    color: #545454;
+    margin-bottom: 42px;
+}
+
+.about_shelter-text {
+    max-width: 430px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #4c4c4c;
+}
+
+.text_about-shelter {
+    max-width: 430px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px; 
+    color: #4c4c4c;
+}
+
+/* third page start */
+
+.page_three {
+    width: 1280px;
+    height: 877px;
+    background: #f6f6f6;
+}
+
+.heading_pets {
+    max-width: 400px;
+    margin-top: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+}
+
+.pet_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 435px;
+    margin-bottom: 60px;
+
+}
+.arrow_btn {
+    fill: #292929;
+}
+.pets_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    padding: 30px 35px;
+    width: 270px;
+    height: 435px;
+    background-color: #fafafa;
+}
+
+.cat_dog {
+    border-radius: 9px 9px 0 0;
+    width: 270px;
+    height: 270px;
+}
+
+.cat_dog:hover, .cat_dog:focus, .cat_dog:active {
+    opacity: .75;
+}
+
+.header_pets {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #545454;
+}
+
+.pets_but {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid #f1cdb3;
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 187px;
+    height: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px; 
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.rest_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.rest {
+    border-radius: 100px;
+    padding: 15px 45px;
+    width: 261px;
+    height: 52px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #f1cdb3;
+}
+
+/* third page finish */
+
+/* four page start */
+
+.page_four {
+    padding-bottom: 100px;
+    width: 1280px;
+    height: 611px;
+}
+
+.container_help {
+    max-width: 1280px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+.help_container {
+    width: 1200px;
+    height: 431px;
+    background-color: #fff;
+    margin-left: 100px;
+}
+
+.help_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 55px 120px;
+    width: 1026px;
+    height: 281px;
+    margin-top: 60px;
+    align-items: center;
+    gap: 55px 120px;
+}
+
+.help_item1 {
+    width: 82px;
+    height: 113px;
+}
+.help_item2 {
+    width: 150px;
+    height: 113px;
+}
+
+/* Page five*/
+
+.page_five {
+    width: 1280px;
+    height: 462px;
+    background-color: #f6f6f6;
+    padding: 5%;
+}
+
+.donation_dog {
+    margin-right: 30px;
+}
+
+.container_five {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.donation_text {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.donation_h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.donation_h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+.credit_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    padding: 10px 15px;
+    width: 349px;
+    height: 43px;
+    background: #f1cdb3;
+}
+
+.donation_p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #b2b2b2;
+}
+
+/* Footer */
+
+.footer {
+    background: url(./assets/gradient.jpg);
+    width: 1280px;
+    height: 350px;
+}
+
+.footer_p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #fff;
+}
+
+.footer_container {
+    display: flex;
+    width: 1200px;
+    height: 310px;
+}
+
+.footer_item1, .footer_item2 {
+    display: flex;
+    flex-direction: column;
+    margin-right: 160px;
+}
+.footer_link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #f1cdb3;
+    margin-top: 30px;
+}
+
+.footer_link_phone {
+    transform: translate(0px, 1px);
+}
+
+.footer_item3 {
+    width: 300px;
+    height: 310px;
+    margin-top: 40px;
+}
